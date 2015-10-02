@@ -35,7 +35,7 @@
 
 <addon id="plugin.video.xorion"
        name="XorioN - WeTek"
-       version="1.7"
+       version="1.9"
        provider-name="XorioN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
