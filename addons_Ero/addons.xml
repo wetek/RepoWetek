@@ -129,11 +129,11 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-    <addon id="repository.Wetek_XorioN_Ozkaradag_Ero" name="Wetek_Xor" version="1.0.0" provider-name="XorioN_OzKaradag">
+    <addon id="repository.Wetek_XorioN_Ozkaradag_Ero" name="Wetek Adult Addons" version="1.0.0" provider-name="XorioN_OzKaradag">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
-        <extension point="xbmc.addon.repository" name="Wetek_Xor">
+        <extension point="xbmc.addon.repository" name="Wetek Adult Addons">
             <info compressed="false">https://github.com/wetek/RepoWetek/raw/master/addons_Ero/addons.xml</info>
             <checksum>https://github.com/wetek/RepoWetek/raw/master/addons_Ero/addons.xml.md5</checksum>
             <datadir zip="true">https://github.com/wetek/RepoWetek/raw/master/addons_Ero/</datadir>
@@ -141,7 +141,7 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>WeTek Kodi Eklentileri</summary>
-            <description>Wetek icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+            <description>Wetek Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
             <platform>all</platform>
     </extension>
 </addon>
