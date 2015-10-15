@@ -135,7 +135,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.genesis" name="Genesis" version="5.1.1" provider-name="lambda">
+<addon id="plugin.video.genesis" name="Genesis" version="5.1.2" provider-name="lambda">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" version="1.0.0" />
@@ -1850,6 +1850,84 @@ Tvheadend (Version: 4.0.6) is a TV streaming server for Linux supporting DVB-S, 
         <source>https://github.com/XBMC-Addons/service.skin.widgets</source>
         <email></email>
     </extension>
+</addon>
+
+<addon id="service.softcam.oscam"
+       name="oscam-emu modded"
+       version="6.12.11056"
+       provider-name="Stefan Saraev (seo at irc.freenode.net) modded byGuRu">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>oscam-emu modded by GuRu: OSCam is Open Source Conditional Access Modul.</summary>
+    <description>
+OSCam-emu is Open Source Conditional Access Modul.
+modded by GuRu
+    </description>
+    <disclaimer>
+using oscam may be illegal in your country. if in doubt, do not install
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="service.softcam.wicard"
+       name="wicard modded"
+       version="1.1.8"
+       provider-name="modded byGuRu">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>wicard_3k_wetek_byGuRu</summary>
+    <description>
+login = vdr
+password = vdr
+type = newcamd525
+port = 11111
+webif
+port = 8888
+    </description>
+    <disclaimer>
+using oscam may be illegal in your country. if in doubt, do not install
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="service.subtitles.divxplanet"
+       name="Divxplanet"
+       version="0.0.11"
+       provider-name="Koray Al">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.mechanize" version="0.2.5"/>
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Divxplanet Subtitle Service</summary>
+    <description lang="en">Kodi Service to download subtitles from Divxplanet</description>
+    <language>tr en de</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email>admin@koray.al</email>
+    <source>https://github.com/korayal/service.subtitles.divxplanet</source>
+  </extension>
 </addon>
 
 <addon id="service.subtitles.opensubtitles"
