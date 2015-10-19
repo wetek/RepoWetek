@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.Wetek_XMO_Ero" name="XMO Wetek Adult Addons" version="1.0.0" provider-name="XorioN_OzKaradag_Mach1">
+    <addon id="repository.Wetek_XMO_Ero" name="XMO Wetek Adult Addons" version="1.0.0" provider-name="XorioN OzKaradag Mach1 (XMO)">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -10,8 +10,8 @@
             <hashes>false</hashes>
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>WeTek Kodi Adult Eklentileri</summary>
-            <description>Wetek Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+            <summary>WeTek XMO Kodi Adult Eklentileri</summary>
+            <description>Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
             <platform>all</platform>
     </extension>
 </addon>

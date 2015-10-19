@@ -1363,19 +1363,36 @@ http://thawtes.blogspot.com
   </extension>
 </addon>
 
-    <addon id="repository.Wetek_XMO" name="Wetek_XMO Addons" version="1.0.0" provider-name="XorioN OzKaradag Mach1">
+    <addon id="repository.Wetek_XMO" name="Wetek XMO Addons" version="1.0.0" provider-name="XorioN OzKaradag Mach1 (XMO)">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
-        <extension point="xbmc.addon.repository" name="Wetek_XMO Addons">
+        <extension point="xbmc.addon.repository" name="Wetek XMO Addons">
             <info compressed="false">https://github.com/wetek/RepoWetek/raw/master/addons/addons.xml</info>
             <checksum>https://github.com/wetek/RepoWetek/raw/master/addons/addons.xml.md5</checksum>
             <datadir zip="true">https://github.com/wetek/RepoWetek/raw/master/addons/</datadir>
             <hashes>false</hashes>
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>WeTek Kodi Eklentileri</summary>
-            <description>Wetek icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+            <summary>WeTek Kodi Eklentileri (XMO)</summary>
+            <description>Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="repository.Wetek_XMO_Ero" name="XMO Wetek Adult Addons" version="1.0.0" provider-name="XorioN OzKaradag Mach1 (XMO)">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="XMO Wetek Adult Addons">
+            <info compressed="false">https://github.com/wetek/RepoWetek/raw/master/addons_Ero/addons.xml</info>
+            <checksum>https://github.com/wetek/RepoWetek/raw/master/addons_Ero/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/wetek/RepoWetek/raw/master/addons_Ero/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>WeTek XMO Kodi Adult Eklentileri</summary>
+            <description>Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
             <platform>all</platform>
     </extension>
 </addon>
