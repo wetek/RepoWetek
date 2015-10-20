@@ -135,7 +135,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.genesis" name="Genesis" version="5.1.2" provider-name="lambda">
+<addon id="plugin.video.genesis" name="Genesis" version="5.1.3" provider-name="lambda">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" version="1.0.0" />
@@ -1363,6 +1363,36 @@ http://thawtes.blogspot.com
   </extension>
 </addon>
 
+<addon id="repository.unofficial.addon.pro"
+                name="Unofficial [COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] (WeTek_Play/arm) Add-ons"
+                version="6.0.0"
+                provider-name="unofficial.addon.pro">
+        <extension point="xbmc.addon.repository"
+                name="Unofficial OpenELEC.tv Add-on Repository">
+                <dir minversion="14.0.0">
+                    <info>http://unofficial.addon.pro/addons/4.3/WeTek_Play/arm/addons.xml</info>
+                    <checksum>http://unofficial.addon.pro/addons/4.3/WeTek_Play/arm/addons.xml.md5</checksum>
+                    <datadir zip="true">http://unofficial.addon.pro/addons/4.3/WeTek_Play/arm</datadir>
+                </dir>
+                <dir minversion="14.9.0">
+                    <info>http://unofficial.addon.pro/addons/6.0/WeTek_Play/arm/addons.xml</info>
+                    <checksum>http://unofficial.addon.pro/addons/6.0/WeTek_Play/arm/addons.xml.md5</checksum>
+                    <datadir zip="true">http://unofficial.addon.pro/addons/6.0/WeTek_Play/arm</datadir>
+                </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Unofficial addon repository for OpenELEC</summary>
+                <description>
+[COLOR red]=== BIG FAT WARNING ===[/COLOR]
+Use this repository at your own risk.
+If your house gets burned, it's your fault, not ours.
+We give no guarantee. We give no support.
+                </description>
+                <disclaimer>This is an unofficial addon repository. please don't ask for support in openelec forum / irc channel</disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
     <addon id="repository.Wetek_XMO" name="Wetek XMO Addons" version="1.0.0" provider-name="XorioN OzKaradag Mach1 (XMO)">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -1376,6 +1406,8 @@ http://thawtes.blogspot.com
         <extension point="xbmc.addon.metadata">
             <summary>WeTek Kodi Eklentileri (XMO)</summary>
             <description>Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+			<website>http://www.mach1digital.com</website>
+		    <forum>http://www.mach1digital.com/mach1forum/index.php</forum>
             <platform>all</platform>
     </extension>
 </addon>
@@ -1393,8 +1425,33 @@ http://thawtes.blogspot.com
         <extension point="xbmc.addon.metadata">
             <summary>WeTek XMO Kodi Adult Eklentileri</summary>
             <description>Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+			<website>http://www.mach1digital.com</website>
+		    <forum>http://www.mach1digital.com/mach1forum/index.php</forum>
             <platform>all</platform>
     </extension>
+</addon>
+
+<addon
+  id="resource.language.tr_tr"
+  version="1.0.4"
+  name="Turkish"
+  provider-name="Team Kodi">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension
+    point="kodi.resource.language"
+    locale="tr_TR">
+    <charsets>
+      <gui unicodefont="true">CP1254</gui>
+      <subtitle>CP1254</subtitle>
+    </charsets>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Turkish language pack</summary>
+    <description lang="en">Turkish version of all texts used in Kodi.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="script.config.vdr"

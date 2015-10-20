@@ -12,6 +12,8 @@
         <extension point="xbmc.addon.metadata">
             <summary>WeTek Kodi Eklentileri (XMO)</summary>
             <description>Kodi icin bircok eklentiyi bir arada bulabilirsiniz.</description>
+			<website>http://www.mach1digital.com</website>
+		    <forum>http://www.mach1digital.com/mach1forum/index.php</forum>
             <platform>all</platform>
     </extension>
 </addon>
