@@ -1670,7 +1670,7 @@ We give no guarantee. We give no support.
 
 <addon id="script.module.requests"
        name="requests"
-       version="2.7.0"
+       version="2.8.1"
        provider-name="kennethreitz, beenje">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -1687,6 +1687,23 @@ We give no guarantee. We give no support.
     <website>http://python-requests.org</website>
     <source>https://github.com/beenje/script.module.requests</source>
     <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver"
+     name="URLResolver"
+     version="2.10.6"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
   </extension>
 </addon>
 
@@ -1931,7 +1948,7 @@ Tvheadend (Version: 4.0.6) is a TV streaming server for Linux supporting DVB-S, 
 
 <addon id="service.softcam.oscam"
        name="oscam-emu modded"
-       version="6.12.11056"
+       version="6.12.11105"
        provider-name="Stefan Saraev (seo at irc.freenode.net) modded byGuRu">
   <requires>
     <import addon="os.openelec.tv" version="5.0"/>
@@ -2299,6 +2316,29 @@ Middleware to access a smart card using SCard API (PC/SC)
         <summary lang="en">Created by jurialmunkey</summary>
         <description lang="en">Eminence is a skin that seeks simplicity, functionality, and customisability with a modern look</description>
     </extension>
+</addon>
+
+<addon
+  id="skin.influence"
+  version="1.0.7"
+  name="Influence"
+  provider-name="Ipéfix, Jezz_X, Team Kodi">
+  <requires>
+    <import addon="xbmc.gui" version="5.3.0"/>
+	<import addon="script.skinshortcuts" version="0.4.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Influence skin by Ipefix. (Confluence clone)</summary>
+    <description lang="en">Influence ...</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 
