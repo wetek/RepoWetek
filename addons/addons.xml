@@ -2095,8 +2095,8 @@ Tvheadend (Version: 4.0.7) is a TV streaming server for Linux supporting DVB-S, 
 </addon>
 
 <addon id="service.softcam.oscam"
-       name="oscam-emu-dre modded"
-       version="6.13.11107"
+       name="mega-oscam-emu-dre modded"
+       version="6.13.11142"
        provider-name="Stefan Saraev (seo at irc.freenode.net) modded byGuRu and megavolt85">
   <requires>
     <import addon="os.openelec.tv" version="5.0"/>
@@ -2107,7 +2107,7 @@ Tvheadend (Version: 4.0.7) is a TV streaming server for Linux supporting DVB-S, 
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>oscam-emu modded byGuRu and megavolt85: OSCam is Open Source Conditional Access Modul.</summary>
+    <summary>Mega-oscam-emu modded byGuRu and megavolt85: OSCam is Open Source Conditional Access Modul.</summary>
     <description>
 OSCam-emu is Open Source Conditional Access Modul.
 modded by GuRu and megavolt85
