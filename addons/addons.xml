@@ -953,7 +953,7 @@
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.1channel" version="2.5.64" name="1Channel" provider-name="Bstrdsmkr, tuxen, tknorris">
+<addon id="plugin.video.1channel" version="2.5.67" name="1Channel" provider-name="Bstrdsmkr, tuxen, tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -1294,6 +1294,26 @@ http://www.hometheater.co.il</description>
         <summary><![CDATA[Pulsar: Universal streaming]]></summary>
         <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
     </extension>
+</addon>
+
+<!--suppress ALL -->
+<addon id="plugin.video.salts" version="1.0.93" name="Stream All The Sources" provider-name="tknorris">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.myconnpy" version="1.1.6" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+     <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream video from many difference sources</summary>
+        <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
+        <platform>all</platform>
+        <website>http://tvaddons.ag/</website>
+		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
+	</extension>
 </addon>
 
 <addon id="plugin.video.seyirTURK"
@@ -1687,7 +1707,7 @@ http://thawtes.blogspot.com
 
 <addon
   id="pvr.hts"
-  version="2.1.16"
+  version="2.1.18"
   name="Tvheadend HTSP Client"
   provider-name="Adam Sutton, Sam Stenvall, Lars Op den Kamp, Kai Sommerfeld">
   <requires>
@@ -2389,31 +2409,21 @@ Addons Included
 </addon>
 
 <addon id="repository.unofficial.addon.pro"
-                name="Unofficial [COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] (WeTek_Play/arm) Add-ons"
-                version="6.0.0"
-                provider-name="unofficial.addon.pro">
+                name="[COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] Add-ons (unofficial)"
+                version="6.0.2"
+                provider-name="OpenELEC Community">
         <extension point="xbmc.addon.repository"
-                name="Unofficial OpenELEC.tv Add-on Repository">
-                <dir minversion="14.0.0">
-                    <info>http://unofficial.addon.pro/addons/4.3/WeTek_Play/arm/addons.xml</info>
-                    <checksum>http://unofficial.addon.pro/addons/4.3/WeTek_Play/arm/addons.xml.md5</checksum>
-                    <datadir zip="true">http://unofficial.addon.pro/addons/4.3/WeTek_Play/arm</datadir>
-                </dir>
-                <dir minversion="14.9.0">
+                name="OpenELEC Add-ons (unofficial)">
+                <dir minversion="15.0.0">
                     <info>http://unofficial.addon.pro/addons/6.0/WeTek_Play/arm/addons.xml</info>
                     <checksum>http://unofficial.addon.pro/addons/6.0/WeTek_Play/arm/addons.xml.md5</checksum>
                     <datadir zip="true">http://unofficial.addon.pro/addons/6.0/WeTek_Play/arm</datadir>
                 </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
-                <summary>Unofficial addon repository for OpenELEC</summary>
-                <description>
-[COLOR red]=== BIG FAT WARNING ===[/COLOR]
-Use this repository at your own risk.
-If your house gets burned, it's your fault, not ours.
-We give no guarantee. We give no support.
-                </description>
-                <disclaimer>This is an unofficial addon repository. please don't ask for support in openelec forum / irc channel</disclaimer>
+                <summary>OpenELEC Add-ons (unofficial)</summary>
+                <description>The OpenELEC unofficial repository contains add-ons from the community. These add-ons are not supported by OpenELEC staff. If you find a broken add-on please check the OpenELEC or Kodi forums for community support threads and ask the add-on author to submit fixes via GitHub.</description>
+                <disclaimer>Add-ons in this repository are not maintained or supported by OpenELEC staff.</disclaimer>
                 <platform>all</platform>
         </extension>
 </addon>
@@ -3423,6 +3433,30 @@ transmission is a fast, easy and free BitTorrent client
 	</extension>
 </addon>
 
+<addon id="service.multimedia.tvheadend"
+       name="tvheadend"
+       version="6.0.3"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="6.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>tvheadend (Version: 4.0.8): a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources.</summary>
+    <description>
+Tvheadend (Version: 4.0.8) is a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources. It also comes with a powerful and easy to use web interface both used for configuration and day-to-day operations, such as searching the EPG and scheduling recordings. Even so, the most notable feature of Tvheadend is how easy it is to set up: Install it, navigate to the web user interface, drill into the TV adapters tab, select your current location and Tvheadend will start scanning channels and present them to you in just a few minutes. If installing as an Addon a reboot is needed
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="service.multimedia.tvheadend6.0.2"
        name="tvheadend 6.0.2"
        version="6.0.2"
@@ -3643,10 +3677,10 @@ using oscam may be illegal in your country. if in doubt, do not install
 
 <addon id="service.softcam.wicard"
        name="wicard modded"
-       version="1.1.8"
-       provider-name="modded byGuRu">
+       version="1.3.16"
+       provider-name="modded byGuRu and megavolt85">
   <requires>
-    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="os.openelec.tv" version="6.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -3654,17 +3688,21 @@ using oscam may be illegal in your country. if in doubt, do not install
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>wicard_3k_wetek_byGuRu</summary>
+    <summary>wicard_3ko_wetek_byGuRu megavolt85</summary>
     <description>
-login = vdr
-password = vdr
+	newcam
+login = tvh
+password = tvh
 type = newcamd525
 port = 11111
 webif
 port = 8888
+and
+dvb-api
+wicard_3ko_wetek_byGuRu megavolt85
     </description>
     <disclaimer>
-using oscam may be illegal in your country. if in doubt, do not install
+using wicardd may be illegal in your country. if in doubt, do not install
     </disclaimer>
     <platform>all</platform>
   </extension>
