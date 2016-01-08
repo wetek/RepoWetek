@@ -1318,7 +1318,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="1.0.94" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="1.0.96" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -2672,6 +2672,19 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.6">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Common caching api for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module" />
+</addon>
+
 <addon id="script.config.vdr"
        name="VDR Configuration"
        version="1.0.2"
@@ -3746,6 +3759,35 @@ wicard_3ko_wetek_byGuRu megavolt85
     </description>
     <disclaimer>
 using wicardd may be illegal in your country. if in doubt, do not install
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="service.softcam.wicardd"
+       name="wicardd1.19 byGuRu"
+       version="2.19.11"
+       provider-name="hdbox.ws byGuRu">
+  <requires>
+    <import addon="os.openelec.tv" version="6.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>wicardd wetek byGuRu</summary>
+    <description>
+	DVBAPI - vdr-dvbapi-plugin
+	only CAPMT (Linux DVBAPI) need to tvh or vdr
+	webif port 8081
+	PowerVu
+	hdbox.ws
+    </description>
+    <disclaimer>
+using wicardd may be illegal in your country. if in doubt, do not install
+hdbox.ws 2016
     </disclaimer>
     <platform>all</platform>
   </extension>
