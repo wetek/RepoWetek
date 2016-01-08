@@ -936,6 +936,27 @@
     </extension>
 </addon>
 
+<addon id="plugin.program.chrome.launcher" name="Chrome Launcher" version="1.1.5" provider-name="alelec (AddonScriptorDE)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.pydevd" version="2.1.0" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Launch websites via Chrome in Kiosk-mode</summary>
+        <language></language>
+        <description lang="en">Launch websites via Chrome in Kiosk-mode</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/AddonScriptorDE/plugin.program.chrome.launcher</source>
+        <forum>http://forum.xbmc.org/showthread.php?tid=170965</forum>
+        <email>AddonScriptorDE at yahoo dot de</email>
+        <website></website>
+    </extension>
+</addon>
+
 <addon id="plugin.program.oepia" name="VPN for [COLOR grey]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR]" version="1.0.13" provider-name="MetalKettle">
   <requires>
      <import addon="xbmc.python" version="2.1.0"/>
@@ -1297,7 +1318,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="1.0.93" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="1.0.94" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -3041,7 +3062,7 @@ Addons Included
 
 <addon id="script.module.urlresolver"
      name="URLResolver"
-     version="2.10.8"
+     version="2.10.9"
      provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
