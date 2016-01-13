@@ -1024,6 +1024,39 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.flix2kodi"
+       name="Flix2Kodi"
+       version="0.4.9"
+       provider-name="logi85 and many others (especially z-e-r-o)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.8.1"/>
+        <import addon="plugin.video.youtube" version="5.1.11"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Netflix plugin</summary>
+        <summary lang="de">Netflix plugin</summary>
+        <description lang="en">Plugin to watch netflix with Kodi.</description>
+        <description lang="de">Plugin um Netflix mit Kodi anzusehen.</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with
+            your local laws before installing.
+        </disclaimer>
+        <disclaimer lang="de">Einige Teile dieses Addons sind möglicherweise in Ihrem Land nicht legal - bitte prüfen
+            Sie Ihre lokal gültigen Gesetze vor der Installation.
+        </disclaimer>
+        <language>en de</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=254263</forum>
+        <website>https://github.com/logi85/plugin.video.flix2kodi</website>
+        <email/>
+        <source/>
+    </extension>
+</addon>
+
 <addon id="plugin.video.football.today" name="Football Today" version="3.0.0" provider-name="lambda">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1318,7 +1351,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="1.0.97" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="1.0.98" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -2394,6 +2427,26 @@ http://thawtes.blogspot.com
     <disclaimer lang="zh_TW">這是測試版軟體！其原創作者並無法對於以下情況負責，包含：錄影失敗，不正確的定時設定，多餘時數，或任何產生的其它不良影響...</disclaimer>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="repository.logi85" name="Logi85 Addons" version="1.0.0" provider-name="logi85 and many others">
+	<extension point="xbmc.addon.repository" name="Logi85 Addons">
+		<info compressed="false">http://logi85.github.io/addons.xml</info>
+		<checksum>http://logi85.github.io/addons.xml.md5</checksum>
+		<datadir zip="true">http://logi85.github.io/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Logi85 Addons</summary>
+		<description>Logi85's Addon-Repository</description>
+		<disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with
+			your local laws before installing.
+		</disclaimer>
+		<disclaimer lang="de">Einige Teile dieses Addons sind möglicherweise in Ihrem Land nicht legal - bitte prüfen
+			Sie Ihre lokal gültigen Gesetze vor der Installation.
+		</disclaimer>
+		<language>en de</language>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.tknorris.beta" name="tknorris Beta Testing Repository" version="1.0.5" provider-name="tknorris">
