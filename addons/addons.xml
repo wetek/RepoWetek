@@ -957,10 +957,9 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.oepia" name="VPN for [COLOR grey]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR]" version="1.0.13" provider-name="MetalKettle">
+<addon id="plugin.program.oepia" name="VPN for [COLOR grey]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR]" version="1.0.14" provider-name="MetalKettle">
   <requires>
      <import addon="xbmc.python" version="2.1.0"/>
-     <import addon="os.openelec.tv" version="6.0"/>
      <import addon="repository.unofficial.addon.pro" version="4.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -1026,7 +1025,7 @@
 
 <addon id="plugin.video.flix2kodi"
        name="Flix2Kodi"
-       version="0.5.0"
+       version="0.5.1"
        provider-name="logi85 and many others (especially z-e-r-o)">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
