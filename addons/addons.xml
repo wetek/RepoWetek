@@ -998,6 +998,42 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.all.iptv"
+       name="all iptv"
+       version="2.0.1"
+       provider-name="XKILER">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>all iptv- shamelessly forked from livestreams but added many thinks</summary>
+    <description>
+         MI PEQUEÑO GRANO DE ARENA,
+        1. PARA UN MUNDO MEJOR,
+        2. (DISEÑADO,ORGANIZADO,REVISADO,)BY PLAY ON IPTV
+        TODO ESTE CONTENIDO ES FREE NO DONACIONES TODO EL CONTENIDO ES BASE DE ESTUDIO DE PLUGIN
+		Y ESCRITURA XML PARA ,KODI,XBMC ,TODAS LAS CADENAS DE ESTAS LISTAS FUNCIONAN
+		Y AN SIDO TODAS VERIFICADAS Y ORGANIZADAS POR MI EN ORDEN ALFABETICO
+		PARA SU FACIL LOCALIZACION PEQUEÑO GRANITO DE ARENA PARA UN MUNDO MEJOR
+		GRACIAS A TODOS Y DISFRUTAR.
+		- ALL IPTV - ESTA DISEÑADO EN ORDEN ALFABETICO Y HAY CONTENIDO DE TODOS LOS IDIOMAS
+         </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
        version="1.4.2"
@@ -1059,7 +1095,7 @@
 
 <addon id="plugin.video.flix2kodi"
        name="Flix2Kodi"
-       version="0.5.5"
+       version="0.5.7"
        provider-name="logi85 and many others (especially z-e-r-o)">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1405,7 +1441,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="1.0.115" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.1" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -2538,6 +2574,34 @@ http://thawtes.blogspot.com
 	<extension point="xbmc.addon.metadata">
 		<summary>Install my Addons</summary>
 		<description>Download and install addons from MetalKettle</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+
+<addon id="repository.projectmrnetwork" name="Project MR Network" version="1.0.0" provider-name="Indiecrew, MalayRevolution Network">
+	<extension point="xbmc.addon.repository" name="MR Network Repository">
+		<info compressed="false">https://raw.githubusercontent.com/indiecrew/ProjectMRNetwork/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/indiecrew/ProjectMRNetwork/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/indiecrew/ProjectMRNetwork/master/zip/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en">Install Add-ons from MR Network Repository.</summary>
+		<description lang="en">Download and install add-ons from MR Network repository. By using this repository you will be able to take advantage of cutting edge features our contributors constantly develop and update.</description>
+		<disclaimer lang="en">MR Network will not responsible for all add-ons on this repository</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.schismtv.addonsdev" name="SchisM Addons Repository" version="1.0.0" provider-name="SchisM">
+	<extension point="xbmc.addon.repository" name="SchisM TV Repository">
+		<info compressed="false">https://raw.github.com/schismtv/addonsrepo/master/addons.xml</info>
+		<checksum>https://raw.github.com/schismtv/addonsrepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/schismtv/addonsrepo/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install SchisM Addons</summary>
+		<description>Download and install addons from SchisM</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -3693,7 +3757,7 @@ Addons Included
 
 <addon id="script.module.urlresolver"
      name="URLResolver"
-     version="2.10.11"
+     version="2.10.12"
      provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3836,9 +3900,9 @@ Addons Included
   </extension>
 </addon>
 
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.2" provider-name="BigNoid,marcelveldt">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.6" provider-name="BigNoid,marcelveldt">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.unidecode" version="0.4.14"/>
 	</requires>
