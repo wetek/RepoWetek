@@ -483,7 +483,7 @@
 
 <addon id="metadata.common.themoviedb.org"
        name="The Movie Database Scraper Library"
-       version="2.13.2"
+       version="2.14.0"
        provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -641,7 +641,7 @@
 
 <addon id="metadata.themoviedb.org"
        name="The Movie Database"
-       version="3.8.8"
+       version="3.9.0"
        provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -884,6 +884,216 @@
     <platform>all</platform>
     <license>GPL v2.0</license>
     <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="metadata.tvshows.themoviedb.org"
+       name="The Movie Database"
+       version="1.3.0"
+       provider-name="Team Kodi">
+  <requires>
+    <import addon="xbmc.metadata" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.tvshows"
+             language="en"
+             library="tmdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="bg">Сваля инф. за ТВ Сериали от TMDB</summary>
+    <summary lang="cs">TMDb zdroj  dat k seriálům </summary>
+    <summary lang="de">TMDB Fernsehserien Scraper</summary>
+    <summary lang="el">Scraper Τηλ. Σειρών του TMDb</summary>
+    <summary lang="en">TMDB TV show Scraper</summary>
+    <summary lang="en_US">TMDB TV show Scraper</summary>
+    <summary lang="es">Scraper de series TMDB</summary>
+    <summary lang="fr_CA">Extracteur de d'émissions télé TMDb</summary>
+    <summary lang="gl">Scraper serie de TV TMDB</summary>
+    <summary lang="he">סקרייפר סדרות TMDB</summary>
+    <summary lang="hr">TMDB sakupljač TV serija</summary>
+    <summary lang="hu">TMDB TV show Letöltő</summary>
+    <summary lang="id">Pengais Serial TV TMDB</summary>
+    <summary lang="is">TMDB TV skafa fyrir sjónvarpsefni</summary>
+    <summary lang="ko">TMDB TV 쇼 정보수집기</summary>
+    <summary lang="lt">TMDB TV laidų skreperis</summary>
+    <summary lang="nl">TMDB TV-serie scraper</summary>
+    <summary lang="pl">Ekstraktor serialowy TMDB</summary>
+    <summary lang="pt">Colector de filmes TMDb</summary>
+    <summary lang="pt_BR">Scraper de Seriados TMDb</summary>
+    <summary lang="ru">TMDB ТВ шоу инфоресурс</summary>
+    <summary lang="sv">TMDB TV-serie skrapa</summary>
+    <summary lang="zh">TMDB 剧集刮削器</summary>
+    <description lang="af">themoviedb.org is 'n verniet en oop fliek databasis. Dit is totaal gebruiker gedryf deur mense soos jy. TMDB word huidiglik deur miljoene mense elke maand gebruik, en met hulle kragtige API word dit ook deur baie gewilde media sentrums soos Kodi gebruik om Fliek Metadata, Plakkate en Ondersteunerkuns te onttrek om die gebruiker se ondervinding te verryk.</description>
+    <description lang="be">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like Kodi to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="bg">themoviedb.org е безплатна и отворена филмова база данни. Задвижва се изцяло от потребителите си, от хора като вас. Милиони хора по света всеки месец ползват TMDb. Благодарение на многофункционално API може да се ползва от най-различни и популярни медийни центрове като Kodi, които извличат метаданни, постери и фанарт за филмите с цел за красивото оформяне на интерфейса.</description>
+    <description lang="ca">themoviedb.org és una base de dades oberta i lliure. Es manté completament per usuaris, per gent com tu. TMDb s'utilitza actualment per milions de persones cada mes i amb la seva potent API també és utilitzada per molts centre media populas com l'Kodi per obtenir les meta-dades de pel·lícules, pósters i fanart per enriquir l'experiència d'usuari.</description>
+    <description lang="cs">themoviedb.org je otevřená a svobodná databáze filmů. Je řízena uživateli, tedy lidmi jako vy. TMDB je každý měsíc používána milióny lidí a se svým výborným API je také používano mnoha populárními mediálními centry jako je Kodi, k získávání metadat, plagátů a fanartu filmů pro obohacení uživatelského zážitku.</description>
+    <description lang="cy">Mae themoviedb.org yn gronfa ddata ffilmiau rhydd ac agored. Mae'n cael ei yrru gan ddefnyddwyr fel chi. Mae TMDb yn cael ei ddefnyddio gan filiynau o bobl bob mis a gyda'i API pwerus, mae'n cael ei ddefnyddio gan lawer o'r canolfannau cyfrwng fel Kodi i estyn metadata ffilmiau, posteri a chelf er mwyn cyfoethogi profiad defnyddwyr.</description>
+    <description lang="da">themoviedb.org er en fri og åben filmdatabase. Den er helt og aldeles brugerdrevet af folk som dig. TMDb bruges i dag af millioner af mennesker hver måned, og med deres kraftfulde API er den også brugt af mange populære mediecentre såsom Kodi til at hente metadata, plakater og fankunst til film, for at berige brugerens oplevelse.</description>
+    <description lang="de">TheMovieDB.org ist eine freie und offene Filmdatenbank. Sie wird von Benutzern wie dir angetrieben. TheMovieDB wird zur Zeit von millionen Nutzern jeden Monat genutzt und dank ihrer mächtigen API ist sie auch von vielen Media-Center, wie z.B. Kodi, implementiert, um Film-Metadaten, -Poster und -Fanarts zu beziehen, die das Benutzererlebnis verbessern.</description>
+    <description lang="el">Το themoviedb.org είναι μία δωρεάν και ανοικτή βάση δεδομένων ταινιών. Διαχειρίζεται πλήρως από ανθρώπους σαν και εσάς. Το TMDb χρησιμοποιείται από εκατομμύρια ανθρώπους κάθε μήνα, και με το πανίσχυρο API τους, χρησιμοποιείται και από πολλά δημοφιλή κέντρα πολυμέσων όπως το Kodi για να λαμβάνουν μετα-δεδομένα Ταινιών, Αφίσες και Fanart για εμπλουτισμό της εμπειρίας του χρήστη.</description>
+    <description lang="en">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like Kodi to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="en_NZ">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like Kodi to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="en_US">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like Kodi to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="es">themovieDB.org es una base de datos de películas gratuita y abierta. Es una página web que se basa en contenido subido por los usuarios. TMDb es usada diariamente por mucha gente gracias a su API, que es usada por más programas aparte de Kodi para descargar información de películas así como Posters o Fanart (Fondos de escritorio basados en películas usados en distintos skins) para enriquecer la experiencia de usar Kodi.</description>
+    <description lang="es_AR">themovieDB.org es una base de datos de películas gratuita y abierta. Está  formada con contenido subido por usuarios como vos. TMDb es actualmente utilizada por millones de personas cada mes y, gracias a su poderosa API, es usada por muchos programas populares como Kodi para descargar Información de Películas, Posters y Fanart para enriquecer la experiencia de usar Kodi.</description>
+    <description lang="es_MX">themoviedb.org es una base de datos de películas gratis y abierta. Es completamente manejada por usuarios y personas como tu. Actualmente TMDb es usada por millones de personas cada mes, y dado a su poderosa API, es usada también por varios media centers populares como Kodi para obtener Metada de Películas, Posters y Fanarts, enriqueciendo de esta manera la experiencia del usuario.</description>
+    <description lang="et">themoviedb.org on tasuta ja vaba juurdepääsuga filmide andmebaas.See on täielikult koostatud sinu sarnaste inimeste poolt. TMDb on hetkel igapäevaselt kasutuses miljonite inimeste poolt ja seda kasutavad paljud populaarsed meediakeskused, nagu ka Kodi, filmiandmete, fännikunsti ja posterite leidmiseks.</description>
+    <description lang="fi">themoviedb.org on vapaa ja avoin elokuvatietokanta. Se on täysin käyttäjien ylläpitämä. TMDb:a käyttää miljoonat ihmiset joka kuukausi, sitä käytetään käyttäjäkokemuksen rikastuttamiseen monissa muissakin suosituissa Kodi:n kaltaisissa ohjelmissa lataamalla elokuvien tietoja, julisteita ja fanitaidetta.</description>
+    <description lang="fr">themoviedb.org est une base de données gratuite et libre d'accès de films. Elle est totalement gérée par les utilisateurs. TMDb est actuellement utilisée par des millions de personnes chaque mois et, grâce à ses puissantes fonctions et routines, elle est également utilisée par de nombreux Media Centers populaires comme Kodi aux fins de récupération des Métadonnées, Posters et Fanarts des films en vue d'améliorer l'expérience de l'utilisateur.</description>
+    <description lang="fr_CA">themoviedb.org est une base de données libre et ouverte. Elle est complètement gérée par des gens comme vous. TMDb est actuellement utilisée par des millions de personnes chaque mois et avec son API puissante, elle est également utilisée par de nombreux centres multimédias populaires comme Kodi pour récupérer les métadonnées des films, les affiches et le fanart afin d'enrichir l'expérience de l'utilisateur.</description>
+    <description lang="gl">themoviedb.org é una base de datos sobre filmes libre e aberta, impulsada por xente coma ti. Na actualidade TMDb é usada por millóns de persoas todos os meses, e grazas ó seu potente API, usado por algúns dos centros multimedia máis populares como Kodi para obter a información dos filmes, Posters e Fanart e así mellorar a experiencia do usuario.</description>
+    <description lang="he">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like Kodi to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="hr">themoviedb.org je besplatna i otvorena baza filmskih podataka. TMDb trenutno koriste milijuni ljudi svaki mjesec uz pomoću njegovog snažnog API-ja, isto tako se koristi u mnogim popularnim medijskim centrima poput Kodija, kako bi mogli sakupljati informacije o filmovima, filmske postere, omote filmova i na kraju obogatili korisničko iskustvo.</description>
+    <description lang="hu">A themoviedb.org egy ingyenes és nyílt filmadatbázis. Teljes egészében olyan felhasználók töltik fel, mint például Te. A TMDb-t havonta emberek milliói használják és a hatékony API-n keresztül számos népszerű média center is, mint például az Kodi a filmadatok, poszterek, fanartképek letöltésére.</description>
+    <description lang="id">themoviedb.org adalah database film yang gratis dan terbuka. Ini benar-benar digerakkan oleh orang-orang seperti Anda. TMDb saat ini digunakan oleh jutaan orang setiap bulannya dan dengan APInya yang digdaya, juga digunakan oleh beberapa pusat media seperti Kodi untuk mengambil Metadata Film, Poster dan Fanart untuk menperkaya pengalaman penggunanya.</description>
+    <description lang="is">themoviedb.org er frír og opinn gagnagrunnur. Hann er algjörlega rekinn af fólki eins og þér. TMBd er notaður af milljónum manna í hverjum mánuði og með öflugum forritaskilum þeirra (API), er hann líka notaður af mörgum vinsælum heimabíókerfum eins og Kodi til að ná í Ítarupplýsingar yfir Kvikmyndir, Veggspjöld og Fanart til að lífga upplifun notandans.</description>
+    <description lang="it">themoviedb.org è un database libero e aperto. E' gestito da utenti e persone come te. Viene usato correntemente da millioni di persone ogni mese e con le sue potenti API, è anche utilizzato da molti popolari media centers come Kodi per ottenere Metadati, Posters e Fanart di film per arricchire la loro esperienza utente.</description>
+    <description lang="ja">themoviedb.org は自由でオープンな映画データベースです。その運営は、完全にユーザ主導で行われています。TMDb は現在毎月何百万人もの人に利用されているほか、Kodi のようなメディアセンターも、TMDb のパワフルな API を介して映画メタデータ、ポスター、ファンアートを取得し、使い勝手を向上させるなどして使っています。</description>
+    <description lang="ko">themoviedb.org 는 전적으로 여러분 같은 이용자가 주도하는 무료 공개 영화 데이터베이스입니다. TMDb 는 현재 매월 수백만의 사람들이 강력한 API와 함께 사용하고 있을 뿐만 아니라 Kodi 같은 많은 미디어 센터가 영화 정보, 포스터, 팬아트를 가져와 풍성한 사용자 경험을 제공하는데 이용되고 있습니다.</description>
+    <description lang="lt">themoviedb.org yra nemokama ir atvira Filmų duomenų bazė. Jis remiamas ir skaitinamas tokių pat vartotojų kaip ir jūs. TMDb šiuo metu naudoja milijonai žmonių kiekvieną mėnesį, ir turi galingą API (informacinį centrą), taip pat naudojamas daug populiarių žiniasklaidos centrų. Pavyzdžiui Kodi gauti filmo(-ų) metaduomenis, plakatus ir FanArt siekiant praturtinti vartotojo patirtį.</description>
+    <description lang="mk">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like Kodi to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="ml">മൂവി ഡി ബി, എല്ലാവർക്കും കൈവക്കാവുന്ന ഒരു സൗജന്യ വിവരശേഖരമാണ്. ഇതുമൂലം ലോകം മുഴുവനും സിനിമാ പോസ്റ്ററുകൾ എല്ലവരും കാണുന്നു</description>
+    <description lang="ms">themoviedb.org adalah pangkalan data cakera terbuka. Ia sepenuhnya dipacu oleh individu seperti anda. TMDb buat masa ini diguna oleh berjuta-juta individu setiap bulan dan dengan API hebat mereka, ia juga digunakan oleh banyak pusat media popular seperti Kodi untuk mendapatkan Data Meta, Poster, Seni Peminat Cereka untuk memperkayakan pengalaman pengguna.</description>
+    <description lang="nl">Themoviedb.org is een vrije en open filmdatabank. Gebruikers zoals jij vormen de motor van deze site. Op dit moment gebruiken elke maand miljoenen mensen TMDb. De krachtige API van de site laat mediacenters zoals Kodi toe om metadata, posters en fanart op te halen en zo de gebruikerservaring te verrijken.</description>
+    <description lang="no">themoviedb.org er en gratis og åpen filmdatabase. Den drives helt og fullt av mennesker som deg. TMDb brukes av millioner av mennesker hver måned og med sitt gode API, brukes den også av mange popluære mediasenterløsninger som Kodi for å hente metadata for filmer, plakater og fanart for å gi en bedre brukeropplevelse.</description>
+    <description lang="pl">themoviedb.org jest wolną i otwartą filmową bazą danych, zarządzaną przez osoby takie jak Ty. Obecnie odwiedzają ją miliony osób miesięcznie, a dzięki dostępności interfejsu programistycznego jest używana przez wiele centrów multimedialnych takich jak Kodi, jako źródło informacji o filmach, plakatów i tapet.</description>
+    <description lang="pt">O themoviedb.org é uma base de dados de filmes livre e aberta. É actualizado inteiramente por pessoas como você e usado por milhões todos os meses. Com o poderoso motor de busca disponível, também se tornou no favorito para muitos programas de centro de média, como o popular Kodi, para obter informação, posters e fanart que enriquecem a experiência do utilizador.</description>
+    <description lang="pt_BR">O themoviedb.org é um banco de dados aberto e gratuito. É completamente operado por pessoas como você. O TMDb é atualmente usado por milhares de pessoas a cada mês e com sua poderosa API, é usado por muitas centrais de mídia populares como o Kodi para buscar metadados, cartazes e fanart de filmes para enriquecer a experiência do usuário.</description>
+    <description lang="ro">themoviedb.org este o bază de date de filme gratuită și deschisă. Este actualizată de oameni ca și tine. TMDb este curent folosită de milioane de oameni în fiecare lună și datorită API-ului puternic, este de asemena folosită de multe centre media populare ca Kodi pentru a obține informații despre filme, afișe și imagini produse de fani (Fanart) care îmbogățesc experiența utilizatorului.</description>
+    <description lang="ru">themoviedb.org — это бесплатная и открытая база данных фильмов. Она полностью поддерживается обычными людьми. В данный момент сайт TMDb используют миллионы людей каждый месяц, и благодаря мощному API его могут использовать различные популярные медиацентры, такие как Kodi, чтобы получать метаданные, постеры и фанарт для фильмов с целью красивого оформления интерфейса.</description>
+    <description lang="se">themoviedb.org är en fri och öppen filmdatabas. Det drivs helt av människor som dig. TMDb används av miljontals människor varje månad och med deras kraftfulla API, är det också använt av många populära mediacenter som Kodi för att hämta filmmetadata, omslag och fanart för att förgylla användarens upplevelse.</description>
+    <description lang="sk">themoviedb.org je voľná a otvorená databáza filmov. Je výlučne vedená užívateľmi ako si ty. TMDb je každý mesiac používaná miliónmi ľudí, a vďaka svojmu výkonnému API je veľmi populárna medzi 'media centrami' ako Kodi pre sťahovanie filmových metadát, plagátov a fanartov pre obohatenie  zážitkov.</description>
+    <description lang="sl">themoviedb.org je brezplačna in prosta baza filmov. Je v celoti ustvarjena s strani uporabnikov kot ste vi. TMDB uporablja miljone ljudi in z njihovo močno API, jo lahko uporabljate tudi v multimedijskih centrih kot Kodi, s tem prenesete informacije o filmih, plakate in ozadja ter s tem popestrite uporabniško izkušnjo.</description>
+    <description lang="sv">themoviedb.org är en gratis och öppen filmdatabas. Den drivs helt av människor som du. TMDb används för närvarande av miljoner människor varje månad och med deras kraftfulla API används den även av många populära mediacenter som t.ex. Kodi för att hämta metadata om filmer, affischer och fanart för att berika användarens upplevelse.</description>
+    <description lang="ta_IN">themoviedb.org ஒரு இலவச மற்றும் திறந்த திரைப்பட தரவுத்தளம் ஆகும். இந்த தரவுத்தளம்  முற்றிலும் பயனர் மக்களால் இயக்கப்படுகிறது. TMDb அவர்களது சக்திவாய்ந்த API இனால் தற்போது பல இலட்சக்கணக்கான மக்களால் ஒவ்வொரு மாதமும் பயன்படுத்தப்படுகிறது, இது Kodi போன்ற பல பிரபல ஊடக மையங்களில் பயனர் அனுபவத்தை மேம்படுத்த பயன்படுத்தப்படுகிறது.</description>
+    <description lang="th">themoviedb.org เป็นฐานข้อมูลภาพยนตร์ที่ฟรีและเปิดกว้าง. มันถูกขับเคลื่อนจากผู้ใช้ โดยคนเช่นคุณ. TMDb ปัจจุบันมีการใช้โดยคนนับล้านในแต่ละเดือน และมีประสิทธิภาพด้วย API ของพวกเขา , มันยังถูกใช้โดยหลายศูนย์สื่อที่นิยมเช่น Kodi เพื่อดึง อธิบายข้อมูลภาพยนตร์, โปสเตอร์และ แฟนอาร์ต เพื่อเพิ่มประสบการณ์ของผู้ใช้</description>
+    <description lang="tr">themoviedb.org ücretsiz ve herkese açık bir film veri tabanıdır. Tamamen kullanıcılar tarafından oluşturulmakta ve yönetilmektedir. TMDb her ay milyonlarca kullanıcı tarafından kullanılmakta ve güçlü API'si sayesinde Kodi gibi bir çok popüler medya merkezi tarafından Film Veritabanı, Poster ve Fanart bilgilerini kullanarak kullanıcı deneyimini zenginleştirmektedir.</description>
+    <description lang="uk">themoviedb.org - це безкоштовна і відкрита база даних фільмів. Вона повністю підтримується звичайними людьми. В даний момент сайт TMDb використовують мільйони людей кожен місяць, і завдяки потужному API, його можуть використовувати різні популярні медіацентри, такі як Kodi, щоб отримувати метадані, постери і фанарт для фільмів з метою оформлення інтерфейсу.</description>
+    <description lang="vi">themoviedb.org là cơ sở dữ liệu về phim ảnh mở và miễn phí. Nó hoàn toàn được kiểm soát bởi những người như bạn. TMDb hiện tại đang được sử dụng bởi hàng triệu người dùng hàng tháng và với sự hỗ trợ của bộ API mạnh mẽ nó cũng được sử dụng bởi những thiết bị giải trí cá nhân như Kodi cho việc lấy dữ liệu về Phim ảnh, Poster và Fanart để làm tăng trải nghiệm của người sử dụng</description>
+    <description lang="zh">themoviedb.org 是一个开放和自由的电影数据库。它完全由象你一样的用户来掌控。TMDb 每月为上百万用户提供服务，并通过强大的 API 界面为许多流行的媒体中心系统如 Kodi 提供电影资料、封面海报和同人画以丰富用户的体验。</description>
+    <description lang="zh_TW">themoviedb.org是一個免費和開放的電影資料庫。它是完全由與您一樣的廣大使用者來更新資訊。 TMDb目前擁有數以百萬計的使用人次並且有著強大的API，許多受歡迎的媒體中心平台像Kodi藉由TMDb獲取電影的數據資料庫，海報和影片資訊，以豐富使用者體驗。</description>
+    <platform>all</platform>
+    <license>GPL v2.0</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=200504</forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="metadata.universal"
+       name="Universal Movie Scraper"
+       version="2.8.0"
+       provider-name="Olympia, Team Kodi">
+  <requires>
+    <import addon="xbmc.metadata" version="2.1.0"/>
+    <import addon="metadata.common.fanart.tv" version="3.1.0"/>
+    <import addon="metadata.common.imdb.com" version="2.8.0"/>
+    <import addon="metadata.common.movieposterdb.com" version="1.1.1"/>
+    <import addon="metadata.common.ofdb.de" version="1.0.3"/>
+    <import addon="metadata.common.port.hu" version="1.0.3"/>
+    <import addon="metadata.common.omdbapi.com" version="1.0.0"/>
+    <import addon="metadata.common.themoviedb.org" version="2.12.1"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="universal.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="af">Universele Fliek Skraper</summary>
+    <summary lang="be">Universal Movie Scraper</summary>
+    <summary lang="bg">Универсален източник на инф. за филми</summary>
+    <summary lang="ca">Buscador Universal de Pel·licules</summary>
+    <summary lang="cs">Univerzální zdroj dat k filmům</summary>
+    <summary lang="cy">Crafwr Ffilmiau Cyffredinol</summary>
+    <summary lang="da">Universal Film-scraper</summary>
+    <summary lang="de">Universeller Film Scraper</summary>
+    <summary lang="el">Universal Scraper Ταινιών</summary>
+    <summary lang="en">Universal Movie Scraper</summary>
+    <summary lang="en_NZ">Universal Movie Scraper</summary>
+    <summary lang="en_US">Universal Movie Scraper</summary>
+    <summary lang="es">Buscador Universal de Películas</summary>
+    <summary lang="es_AR">Buscador Universal de Películas</summary>
+    <summary lang="et">Universaalne filmide kraabits</summary>
+    <summary lang="fr">Collecteur de films universel</summary>
+    <summary lang="fr_CA">Extracteur universel pour les films</summary>
+    <summary lang="gl">Scraper universal de filmes</summary>
+    <summary lang="he">סקרייפר סרטים אוניברסלי</summary>
+    <summary lang="hr">Universal sakupljač za filmove</summary>
+    <summary lang="hu">Univerzális film adat leolvasó</summary>
+    <summary lang="is">Universal Movie Scraper</summary>
+    <summary lang="it">Scraper universale di film</summary>
+    <summary lang="ja">万能映画スクレーパー</summary>
+    <summary lang="ko">Universal 영화 정보수집기</summary>
+    <summary lang="lt">Universal Movie Scraper</summary>
+    <summary lang="lv">Universālais filmu skrāpis</summary>
+    <summary lang="mk">Universal Movie Scraper</summary>
+    <summary lang="ms">Pengikis Cakera Universal</summary>
+    <summary lang="my">Universal Movie Scraper</summary>
+    <summary lang="nl">Universele filmscraper</summary>
+    <summary lang="no">Universal Film Scraper</summary>
+    <summary lang="pl">Universal Movie Scraper</summary>
+    <summary lang="pt">Universal Movie Scraper</summary>
+    <summary lang="pt_BR">Scraper de FIlmes Universal</summary>
+    <summary lang="ro">Catalog de filme universal</summary>
+    <summary lang="ru">Универсальный скрапер фильмов</summary>
+    <summary lang="sk">Univerzálny sťahovač pre filmy</summary>
+    <summary lang="sl">Univerzalni ponudnik informacij o filmih</summary>
+    <summary lang="sv">Universell filmskrapa</summary>
+    <summary lang="ta_IN">ஒட்டு மொத்தமான நிகழ்படம் சுரண்டி</summary>
+    <summary lang="th">Universal Movie Scraper</summary>
+    <summary lang="tr">Evrensel Film Scraperi</summary>
+    <summary lang="uk">Універсальний шукач інформації про фільми</summary>
+    <summary lang="vi">Trình lấy dữ liệu phim ảnh Universal Scraper</summary>
+    <summary lang="zh">通用电影刮削器</summary>
+    <summary lang="zh_TW">通用的電影資訊搜括器</summary>
+    <description lang="af">Hierdie skraper kollekteer inligting van die volgende ondersteunde werwe: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Dit doen altyd die aanvanklike soektog op TMDb, maar daarna kan dit veld vir veld gestel word vanaf watter werf jy die spesifieke inligting wil hê.</description>
+    <description lang="be">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on TMDb, but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="bg">Сваля информация от следните сайтове: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Можете да определите от кой сайт каква информация да се сваля.&#10;&#10;Първоначалното търсене винаги се прави в TMDb.</description>
+    <description lang="ca">Rascador universal és actualment el rascador més personalitzable mitjançant la recopilació d'informació dels següents llocs suportats: IMDb, TMDB, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Aquest rascador és actualment el vaixell insígnia de l'equip-Kodi raspadors. La recerca inicial es pot fer en TMDB o IMDb (segons la configuració), però després que es pot configurar camp a camp que des del lloc que voleu que la informació específica.</description>
+    <description lang="cs">Univerzální zdroj dat, který získává informace z následujících podporovaných stránek: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Vždy provádí základní hledání na TMDb či IMDb (podle nastavení), ale pro následující hledání může být upraveno pro každou hodnotu, ze které stránky chcete specifickou informaci získat.</description>
+    <description lang="cy">Universal Scraper yw'r crafwr mwyaf cyfaddas ar hyn o bryd drwy gasglu gwybodaeth o'r gwefannau canlynol: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Y crafwr hwn yw'r prif crafwr Team-Kodi. Mae modd gwneud y chwilio cyntaf un ai ar TMDb neu IMDb (yn ôl y gosodiadau) ac ar ôl hynny gall ei osod yn ôl maes o ba wefan i gasglu'r wybodaeth benodol.</description>
+    <description lang="da">Denne scraper indsamler information fra følgende understøttede sider: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Første søgning sker altid i TMDb, men efterfølgende kan der felt for felt vælges, hvilken side den specifikke infomation ønskes fra.</description>
+    <description lang="de">Universal Scraper ist aktuell der Scraper mit den meisten Anpassungsoptionen, da er Metadaten von den folgenden Seiten laden kann: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Dieser Scraper ist damit aktuell der mächtigste Scraper der Team-Kodi Scraper. Die initiale Suche kann entweder in TMDb oder IMDb ausgefürt werden (entsprechend der Einstellungen), anschließend kann aber für jedes Feld individuell ausgewählt werden, woher die Informationen bezogen werden sollen.</description>
+    <description lang="el">Αυτό το scraper συλλέγει πληροφορίες από τις ακόλουθες ιστοσελίδες: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Η αρχική αναζήτηση γίνεται πάντα στο TMDb, αλλά έπειτα μπορεί να ρυθμιστεί πεδίο ανά πεδίο από ποια σελίδα να λαμβάνονται πληροφορίες.</description>
+    <description lang="en">Universal Scraper is currently the most customizable scraper by collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. This scraper is currently the flagship of the Team-Kodi scrapers. The initial search can be done either on TMDb or IMDb (according to the settings), but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="en_NZ">Universal Scraper is currently the most customisable scraper by collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. This scraper is currently the flagship of the Team-Kodi scrapers. The initial search can be done either on TMDb or IMDb (according to the settings), but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="en_US">Universal Scraper is currently the most customizable scraper by collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. This scraper is currently the flagship of the Team-Kodi scrapers. The initial search can be done either on TMDb or IMDb (according to the settings), but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="es">Este buscador obtiene información de los siguientes sitios: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. La primera búsqueda siempre se realiza en TMDb, pero se puede elegir, campo por campo, de qué sitio se tiene que obtener la información.</description>
+    <description lang="es_AR">Este buscador obtiene información de los siguientes sitios: IMDb, TMDb, Rotten tomatoes, Trakt.tv, OFDb.de. Realiza la búsqueda inicial en TMDb, pero a partir de allí se puede especificar desde que sitio se desea obtener cada campo.</description>
+    <description lang="fr">Ce scraper collecte les informations depuis les sites supportés suivants : IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. La recherche initiale est toujours effectuée depuis TMDb, mais vous pouvez indiquer les sites sources des champs un par un pour avoir une information plus spécifique.</description>
+    <description lang="fr_CA">L'extracteur universel est présentement l'extracteur le plus personnalisable en collectant des informations depuis les sites suivants pris en charge : IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Cet extracteur est présentement le vaisseau amiral des extracteurs de l'équipe Kodi. La recherche initiale peut être faite soit sur TMDb ou IMDb (d'après les paramètres), mais il est ensuite possible de configurer champ par champ sur quel site aller chercher chaque information spécifique.</description>
+    <description lang="gl">O Scraper Universal é na actualidade o máis personalizábel en canto a obtención de información dos seguintes sitio: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Este scraper é actualmente o barco insignia dos scrapers do equipo de Kodi. A busca inicial pódese realizar ben sexa en TMDb ou IMDb (dependendo da configuración), pero despois de especificar campo a campo dende que sitio desexa esa información específica.</description>
+    <description lang="he">סקרייפר זה אוסף מידע מהתארים הנתמכים הבאים: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de זה תמיד עושה את החיפוש הפנימי ב-TMDb, אבל בהתאם לזאת ניתן להגדיר לכל שדה מאיזה אתר אתה רוצה לקבל את המידע.</description>
+    <description lang="hr">Univerzalni sakupljač je trenutno najprilagodljiviji sakupljač koji nabavlja informacije sa sljedećih stranica: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Ovaj sakupljač je trenutno vodeći među Team-Kodi sakupljačima. Početna pretraga može biti s TMDb ili IMDb (ovisno o postavkama), ali nadalje se može podesiti polje po polje s koje stranice želite određenu informaciju.</description>
+    <description lang="hu">Ez a leolvasó a következő helyekről gyűjt információkat: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. A kezdő keresést midig az IMDb-n végzi, de utána mezőnként beállítható, hogy melyik oldalakat használja az adott információ lekérésére.</description>
+    <description lang="is">Universal Scraper (Almenn Skafa) er eins og er mest aðlaganleg skafa til að safna upplýsingum frá eftirfarandi studdum stöðum: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Þessi skafa er eins og er flaggskip Team-Kodi skafna. Upphaflega leit er hægt að gera annaðhvort á TMDb eða IMDb (fer eftir stillingum), en þar á eftir er hægt að skilgreina eftir hverjum færslureit hvaða veitur þú vilt nota fyrir sértækar upplýsingar.</description>
+    <description lang="it">Lo Scraper Universale è al momento lo scraper più personalizzabile, raccogliendo le informazioni dai seguenti siti: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Questo scraper è il migliore tra gli scraper del Team-Kodi. La ricerca iniziale può essere eseguita sia su TMDb che su IMDb (a seconda delle impostazioni), ma per le successive informazioni è possibile impostare un sito per ogni campo di informazione preciso da raccogliere.</description>
+    <description lang="ja">このスクレーパーは、以下のサイトから情報を取得します。IMDb、TMDb、Rotten Tomatoes、Trakt.tv、OFDb.de。最初の検索は TMDb から行われますが、それに続く検索は各フィールドごとにどのサイトで検索するか設定できます。</description>
+    <description lang="ko">Universal Scraper는 항목별 사용자 설정이 가능한 정보수집기이며 다음 사이트를 지원합니다: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. 이 정보수집기는 Team-Kodi의 주력 수집기입니다. 초기 검색은 (설정에 따라) TMDb 또는 IMDB에서 수행하지만 특정 정보를 지정한 사이트에서 가져오도록 필드별 설정이 가능합니다.</description>
+    <description lang="lt">Universal Movie Scraper šiuo metu yra labiausiai derinamas skreperis, galintis surinkti informaciją iš šių interneto svetainių: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Šis skreperis yra lyderis tarp Team-Kodi skreperių. Pradinė paieška gali būti atlikta arba TMDb, arba IMDb interneto svetainėse (priklausomai nuo nustaymų), bet vėliau galima kiekvienam laukui atskirai nustatyti iš kokios interneto svetainės norite gauti konkrečią informaciją.</description>
+    <description lang="lv">Universālais skrāpis pašlaik ir vispielāgojamākais skrāpis, kas atbalsta informācijas savākšanu no šādām vietnēm: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Šis skrāpis pašreiz ir Team-Kodi skrāpju flagmanis. Sākotnējā meklēšana var notikt vai nu TMDb vai arī IMDb (atbilstoši iestatījumiem), bet visu pārējo informāciju var iestatīt lauciņu pa lauciņam, no kuras lapas iegūst specifisko informāciju.</description>
+    <description lang="mk">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on TMDb, but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="ms">Pengikis Universal buat masa ini merupakan pengikis paling boleh disuai dengan mengutip maklumat dari laman tersokong berikut: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Pengikis ini buat masa ini merupakan pengikis lalai Pasukan-Kodi. Gelintar awalan boleh dibuat sama ada pada TMDb atau IMDb (berdasarkan pada tetapan), tetapi yang berikut boleh ditetapkan mengikut medan yang mana anda boleh tentukan maklumat secara khusus.</description>
+    <description lang="nl">Deze scraper verzamelt informatie van de volgende ondersteunde sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Het start altijd de eerste zoektocht op TMDb, maar vervolgens kan veld voor veld informatie gekozen worden van de site waar jij de specifieke informatie van wilt.</description>
+    <description lang="no">Denne scraper samler inn informasjon fra følgende støttede steder:  IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. På nåværende tidspunkt er denne scraperen flaggskipet blant Team-Kodi scrapere. Første søk skjer alltid i TMDb eller IMDb (avhengig av innstillinger). I etterfølgende søk kan det derimot velges felt for felt hvilken side den spesifikke informasjonen ønskes fra.</description>
+    <description lang="pl">Universal Scraper jest aktualnie esktraktorem o największych możliwościach personalizacji, zbierając informacje z następujących serwisów: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. W pierwszej kolejności przeszukuje serwisy TMDb lub IMDb (w zależności od ustawień), a następnie może być ustawiony by poszczególne pola były wypełniane informacjami z innych serwisów.</description>
+    <description lang="pt">O Universal Scraper é, actualmente, o colector mais personalizável, que obtém informação a partir dos seguinte sites suportados: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Atualmente, este é o topo de gama dos colectores da Team-Kodi. A procura inicial pode ser efectuada no TMDb ou no IMDb (de acordo com as definições), mas após isso, esta pode ser definida campo a campo a partir do site pretendido com a informação especifica.</description>
+    <description lang="pt_BR">Este scraper coleta informações dos seguintes sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. A busca inicial sempre se dá no TMDb, mas segue aquilo que estiver setado campo a campo  dos sites que você deseja informação específica.</description>
+    <description lang="ro">Acest catalog este completat cu informații de la următoarele siteuri: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Căutarea inițială se face întotdeauna pe TMDb, dar după aceasta fiecare câmp poate fi setat să ia informația de pe un site specific.</description>
+    <description lang="ru">Этот модуль собирает информацию со следующих поддерживаемых сайтов: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Он всегда делает начальный поиск по TMDb, хотя может быть установлена последовательность того, с какого сайта Вы хотите получить конкретную информацию.</description>
+    <description lang="sk">Tento sťahovač zbiera informácie z týchto stránok: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Počiatočné vyhľadávanie vždy robí pomocou TMDb, ale následne môžete pole po poli nastaviť z ktorej stránky má zbierať špecifické informácie. </description>
+    <description lang="sl">Univerzalni ponudnik je trenutno najbolj prilagodljiv ponudnik informacij o filmih s strani: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Osnovno iskanje se lahko opravi na TMDb ali IMDb (glede na nastavitev), vendar lahko nastavite od kod se bo prenesla posamezna informacija.</description>
+    <description lang="sv">Denna skrapa samlar information från följande siter: IMDb, RMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Sökning görs alltid först på TMDb, men den kan konfigureras att hämta efterföljande information - fält för fält - från valfri site.</description>
+    <description lang="ta_IN">உலகளாவிய சுரண்டி தற்போது பின்வரும் ஆதரவு தளங்களில் இருந்து தகவல்களை சேகரித்து உள்ளது: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. ஆரம்ப தேடலானது, TMDb அல்லது IMDb (அமைப்புகளை பொறுத்து) செய்யலாம், அதன் பின்னர் உங்களுக்கு தேவையான குறிப்பிட்ட தகவல்களை அமைப்பு செய்து கொள்ள முடியும்.</description>
+    <description lang="th">การดึงข้อมูลภาพยนตร์ได้รับการสนับสนุนจากเว็บไซต์  IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. โดยจะดึงข้อมูลจากเว็บ TMDB เป็นอันดับแรก แต่คุณสามารถตั้งค่าการรับข้อมูลจากเว็บไซต์ที่คุณต้องการได้</description>
+    <description lang="vi">Trình Universal Scraper là trình thu thập thông tin được với khả năng tuỳ biến tốt nhất, hỗ trợ thu thập thông tin từ các site: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de, port.hu. Trình này hiện là công cụ thu thập chuẩn nổi bật nhất của Team-Kodi. Việc tìm kiếm ban đầu có thể thực hiện ở cả 2 site TMDb hay IMDb (tuỳ thiết lập của bạn), kế tiếp sẽ do người dùng tuỳ chỉnh các thông tin cụ thể được lựa chọn từ từng site</description>
+    <description lang="zh">通用刮削器是当前定制功能最强的刮削器，它支持从以下站点获取信息：IMDb、TMDb、Rotten Tomatoes、Trakt.tv、OFDb.de、port.hu。此刮削器目前是 Kodi 开发团队的旗舰级刮削器。初始结果总是先从 TMDb 或 IMDb（根据设置）获取，然后可以针对不同项目分别设置从不同站点获取信息。</description>
+    <description lang="zh_TW">Universal Scraper是現今可客製化程度最高的搜括器，並從以下的支援網站取得資訊：IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de。這​​是目前Kodi團隊的旗艦搜括器。它總以 TMDb或IMDB (根據設定值) 當作初始搜尋的網站，但可以單獨在每一個獨立的選項設定你要得網站並取得指定的相關資訊。</description>
+    <platform>all</platform>
+    <license>GPL v2.0</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=129821</forum>
     <website></website>
     <email></email>
     <source></source>
@@ -1441,7 +1651,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.1" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.7" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -1598,7 +1808,7 @@ http://thawtes.blogspot.com
 	</extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="5.1.16" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="5.1.17" provider-name="bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -2560,7 +2770,7 @@ http://thawtes.blogspot.com
 	</extension>
 </addon>
 
-<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.0" provider-name="MetalKettle">
+<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.1" provider-name="MetalKettle">
 	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
 	<dir>
 		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
@@ -4036,7 +4246,7 @@ Addons Included
 	</extension>
 </addon>
 
-<addon id="script.tvtunes" name="TvTunes" version="6.1.3" provider-name="robwebset">
+<addon id="script.tvtunes" name="TvTunes" version="6.1.4" provider-name="robwebset">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -4229,7 +4439,7 @@ transmission is a fast, easy and free BitTorrent client
   </extension>
 </addon>
 
-<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.1.4">
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.1.5">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 		<import addon="xbmc.json" version="6.0.0"/>
